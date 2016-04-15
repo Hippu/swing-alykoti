@@ -7,7 +7,7 @@ import java.awt.*;
 public class HelloWorld {
     private static void createAndShowGui() {
         JFrame frame = new JFrame("Hello World!");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         JLabel label = new JLabel("Hello World!");
         frame.getContentPane().add(label);
