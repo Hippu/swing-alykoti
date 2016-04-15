@@ -20,13 +20,8 @@ public class HelloWorld {
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (UnsupportedLookAndFeelException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (IllegalAccessException | InstantiationException |
+                ClassNotFoundException | UnsupportedLookAndFeelException e) {
             e.printStackTrace();
         }
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
